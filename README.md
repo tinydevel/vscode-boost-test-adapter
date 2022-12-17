@@ -17,7 +17,7 @@ from the Testing sidebar of VS Code.
 
 ## Configurations
 ```json
-    "boost-test-adapter-feher.tests": [
+    "boost-test-adapter-tinydevel.tests": [
         {
             // Mandatory
             "testExecutables": [
@@ -100,16 +100,9 @@ from the Testing sidebar of VS Code.
 This extension is based on code from these extensions:
 - https://github.com/firoorg/vscode-boost-test-adapter
 - https://github.com/newdigate/vscode-boost-test-adapter.git
+- https://github.com/feher/vscode-boost-test-adapter
+
 
 ## Changelog
-* Update 3.2.3
-  * Add `Copy Path` and `Copy Relative Path` commands to the context menu.
-  * Add `Copy Boost.Test ID` command to the conext menu. It allows to copy the Boost test ID (test path) of a
-    test case or test suite to the clipboard for [test unit filtering](https://www.boost.org/doc/libs/1_80_0/libs/test/doc/html/boost_test/runtime_config/test_unit_filtering.html).
-  * Bug fixes.
-* Update 3.2.0
-  * Use the built-in Test Explorer of VS Code. No need to install the external [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer) extension any more.
-* Update 3.0.0
-  * Add support for deeply nested test suites (multiple levels of test suites)
-  * Add support for multiple test executables
-  * Add support for cancelling tests
+* Update 3.2.4
+  * Fixing parsing test case name when test is based on a template (BOOST_AUTO_TEST_CASE_TEMPLATE)
