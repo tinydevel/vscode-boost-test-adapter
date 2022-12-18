@@ -25,10 +25,10 @@ export class TestExecutable {
 
     private readonly regexEnterTestSuite = /^(.+): Entering test suite "(\w+)"$/;
     private readonly regexLeaveTestSuite = /^(.+): Leaving test suite "(\w+)"; testing time: (\d+)(\w+)$/;
-    private readonly regexEnterTestCase = /^(.+): Entering test case "(\w+)"$/;
-    private readonly regexLeaveTestCase = /^(.+): Leaving test case "(\w+)"; testing time: (\d+)(\w+)$/;
-    private readonly regexTestCaseError = /^(.+)\(([0-9]+)\): error: in "([\w\/]+)": (.+)$/;
-    private readonly regexTestCaseFatalError = /^(.+)\(([0-9]+)\): fatal error: in "([\w\/]+)": (.+)$/;
+    private readonly regexEnterTestCase = /^(.+): Entering test case "(\w+.*)"$/;
+    private readonly regexLeaveTestCase = /^(.+): Leaving test case "(\w+.*)"; testing time: (\d+)(\w+)$/;
+    private readonly regexTestCaseError = /^(.+)\(([0-9]+)\): error: in "([\w\/]+.*)": (.+)$/;
+    private readonly regexTestCaseFatalError = /^(.+)\(([0-9]+)\): fatal error: in "([\w.\/]+.*)": (.+)$/;
 
     constructor(
         readonly testExeTestItemId: string,

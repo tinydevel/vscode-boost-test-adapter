@@ -1,6 +1,6 @@
 {
   "name": "boost-test-adapter-tinydevel",
-  "version": "3.2.4",
+  "version": "3.2.5",
   "displayName": "Boost.Test Adapter",
   "description": "Run or debug your Boost.Test tests in the Sidebar of Visual Studio Code",
   "author": "https://github.com/tinydevel/vscode-boost-test-adapter",

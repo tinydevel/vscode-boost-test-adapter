@@ -104,5 +104,7 @@ This extension is based on code from these extensions:
 
 
 ## Changelog
+* Update 3.2.5
+  * Fixing issue with proper results parsing
 * Update 3.2.4
   * Fixing parsing test case name when test is based on a template (BOOST_AUTO_TEST_CASE_TEMPLATE)
